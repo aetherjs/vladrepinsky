@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vladrepinsky/static/css/main.0992e61f.css",
+    "main.js": "/vladrepinsky/static/js/main.7c6d3bd0.js",
+    "index.html": "/vladrepinsky/index.html",
+    "main.0992e61f.css.map": "/vladrepinsky/static/css/main.0992e61f.css.map",
+    "main.7c6d3bd0.js.map": "/vladrepinsky/static/js/main.7c6d3bd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0992e61f.css",
+    "static/js/main.7c6d3bd0.js"
+  ]
+}
