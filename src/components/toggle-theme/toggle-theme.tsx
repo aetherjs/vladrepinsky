@@ -1,35 +1,29 @@
 import React from 'react'
 
+import styles from './toggle-theme.module.css'
+
 export interface ToggleThemeProps {
-	test: number
+	icon: string
+	name: string
+	handleClick: () => void
 }
 
-export interface ToggleThemeState {
-	test: number
-}
-
-export class ToggleTheme extends React.Component<ToggleThemeProps, ToggleThemeState> {
+export class ToggleTheme extends React.Component<ToggleThemeProps> {
 
 	constructor(props: ToggleThemeProps) {
 		super(props)
-		this.state = {test: props.test}
-
-		this.increment = this.increment.bind(this)
-	}
-
-	increment() {
-		this.setState((state) => {
-			return {test: state.test + 1}
-		})
 	}
 
 	render() {
 		return (
-			<>
-				<div>{this.props.test}</div>
-				<div>{this.state.test}</div>
-				<button onClick={this.increment}>+</button>
-			</>
+			<button
+				className={styles.toggleTheme}
+				onClick={this.props.handleClick}>
+				<img
+					className={styles.toggleThemeIcon}
+					src={this.props.icon}
+				/>
+			</button>
 		)
 	}
 }
