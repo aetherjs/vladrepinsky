@@ -1,0 +1,7 @@
+.links {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 5%;
+	margin-left: 5%;
+	list-style-type: none;
+}
