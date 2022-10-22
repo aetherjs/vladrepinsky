@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './App.module.css'
 import { Footer } from './components/footer/footer'
+import { ToggleTheme } from './components/toggle-theme'
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					Quisque et lacus iaculis, viverra libero interdum, ultricies.
 				</p>
 				<Footer />
+				<ToggleTheme test={0} />
 			</div>
 		</div>
 	)
