@@ -1,0 +1,17 @@
+.toggleTheme {
+	width: fit-content;
+	box-sizing: border-box;
+	padding: 8px;
+	border: 2px solid red;
+	background: white;
+}
+
+.toggleTheme:hover {
+	cursor: pointer;
+}
+
+.toggleThemeIcon {
+	display: flex;
+	width: 24px;
+	height: 24px;
+}
