@@ -11,8 +11,15 @@ function App() {
 		if (themeIndex === themes.length - 1) {
 			setThemeIndex(0)
 		} else {
-			setThemeIndex(themeIndex + 1)
+			setThemeIndex((prev) => prev + 1)
 		}
+	}
+
+	function getNextTheme() {
+		if (themeIndex === themes.length - 1) {
+			return themes[0]
+		}
+		return themes[themeIndex + 1]
 	}
 
 	return (
@@ -36,8 +43,8 @@ function App() {
 				</p>
 				<Footer />
 				<ToggleTheme
-					name={themes[themeIndex].name}
-					icon={themes[themeIndex].icon}
+					name={getNextTheme().name}
+					icon={getNextTheme().icon}
 					handleClick={nextTheme}
 				/>
 			</div>
