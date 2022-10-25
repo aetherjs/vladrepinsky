@@ -1,0 +1,8 @@
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	column-gap: 1em;
+	list-style-type: none;
+	row-gap: 0.4em;
+}
