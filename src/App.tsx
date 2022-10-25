@@ -2,28 +2,12 @@ import React, { useState } from 'react'
 import styles from './App.module.css'
 import { Footer } from './components/footer/footer'
 import { ToggleTheme } from './components/toggle-theme'
-import { themes } from './assets/themes'
 
 function App() {
-	const [themeIndex, setThemeIndex] = useState(0)
-
-	function nextTheme() {
-		if (themeIndex === themes.length - 1) {
-			setThemeIndex(0)
-		} else {
-			setThemeIndex((prev) => prev + 1)
-		}
-	}
-
-	function getNextTheme() {
-		if (themeIndex === themes.length - 1) {
-			return themes[0]
-		}
-		return themes[themeIndex + 1]
-	}
+	const [themeClass, setThemeClass] = useState('')
 
 	return (
-		<div className={`${styles.app} ${themes[themeIndex].class}`}>
+		<div className={`${styles.app} ${themeClass}`}>
 			<div className={styles.appWelcome}>
 				<p>Welcome.</p>
 				<p>
@@ -42,11 +26,7 @@ function App() {
 					Quisque et lacus iaculis, viverra libero interdum, ultricies.
 				</p>
 				<Footer />
-				<ToggleTheme
-					name={getNextTheme().name}
-					icon={getNextTheme().icon}
-					handleClick={nextTheme}
-				/>
+				<ToggleTheme handleThemeChange={setThemeClass} />
 			</div>
 		</div>
 	)

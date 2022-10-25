@@ -1,29 +1,36 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react'
+import { themes } from '../../assets/themes'
 import styles from './toggle-theme.module.css'
 
-export interface ToggleThemeProps {
-	icon: string
-	name: string
-	handleClick: () => void
+export type ToggleThemeProps = {
+	handleThemeChange: (cssClass: string) => void
 }
 
-export class ToggleTheme extends React.Component<ToggleThemeProps> {
+export const ToggleTheme = (props: ToggleThemeProps) => {
+	const [themeIndex, setThemeIndex] = useState(0)
 
-	constructor(props: ToggleThemeProps) {
-		super(props)
+	const getNextThemeIndex = (index: number) => index === themes.length - 1 ? 0 : index + 1
+	const getNextTheme = (currIndex: number) => themes[getNextThemeIndex(currIndex)]
+	const applyNextTheme = () => {
+		setThemeIndex(getNextThemeIndex)
 	}
 
-	render() {
-		return (
-			<button
-				className={styles.toggleTheme}
-				onClick={this.props.handleClick}>
-				<img
-					className={styles.toggleThemeIcon}
-					src={this.props.icon}
-				/>
-			</button>
-		)
-	}
+	useEffect(() => {
+		props.handleThemeChange(themes[themeIndex].class)
+	}, [themeIndex])
+
+	const {icon, name} = getNextTheme(themeIndex)
+
+	return (
+		<button
+			className={styles.toggleTheme}
+			onClick={applyNextTheme}
+		>
+			<img
+				className={styles.toggleThemeIcon}
+				alt={name}
+				src={icon}
+			/>
+		</button>
+	)
 }
