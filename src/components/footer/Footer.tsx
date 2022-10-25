@@ -1,13 +1,19 @@
-import * as React from 'react'
-
-import styles from './footer.module.css'
+import React from 'react'
 
 export function Footer() {
 	return (
 		<footer>
-			<ul className={styles.links}>
+			<ul>
 				<li>Links</li>
-				<li><a href="https://github.com/aetherjs">GitHub</a></li>
+				<li>
+					<a
+						target={'_blank'}
+						href="https://github.com/aetherjs"
+						rel="noreferrer"
+					>
+						GitHub
+					</a>
+				</li>
 				<li>And</li>
 				<li>Some</li>
 				<li>More</li>

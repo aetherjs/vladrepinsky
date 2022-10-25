@@ -1,18 +1,6 @@
 .app {
-	font-family: "Helvetica Neue", serif;
-	font-weight: 700;
-	text-align: left;
-}
-
-.appLogo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.appLogo {
-		animation: app-logo-spin infinite 20s linear;
-	}
+	min-height: 100vh;
+	background: grey;
 }
 
 .appWelcome {
@@ -38,4 +26,9 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.footer {
+	display: block;
+	border: 2px solid red;
 }

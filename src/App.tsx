@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import styles from './App.module.css'
 import { Footer } from './components/footer/footer'
 import { ToggleTheme } from './components/toggle-theme'
+import styles from './App.module.css'
 
 function App() {
 	const [themeClass, setThemeClass] = useState('')
 
 	return (
 		<div className={`${styles.app} ${themeClass}`}>
-			<div className={styles.appWelcome}>
+			{/* <div className={styles.appWelcome}>
 				<p>Welcome.</p>
 				<p>
 					My name is Vlad Repinskiy, I am a
@@ -25,8 +25,10 @@ function App() {
 					Fusce sed sem eu elit gravida congue non at diam. Aliquam interdum neque enim.
 					Quisque et lacus iaculis, viverra libero interdum, ultricies.
 				</p>
-				<Footer />
 				<ToggleTheme handleThemeChange={setThemeClass} />
+			</div> */}
+			<div className={styles.footer}>
+				<Footer />
 			</div>
 		</div>
 	)
