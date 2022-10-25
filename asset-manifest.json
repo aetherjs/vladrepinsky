@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/vladrepinsky/static/css/main.0992e61f.css",
-    "main.js": "/vladrepinsky/static/js/main.7c6d3bd0.js",
+    "main.css": "/vladrepinsky/static/css/main.797b5706.css",
+    "main.js": "/vladrepinsky/static/js/main.f0e81a46.js",
+    "static/media/sun.svg": "/vladrepinsky/static/media/sun.568d20641a6bba4549d9bd397def52aa.svg",
+    "static/media/moon.svg": "/vladrepinsky/static/media/moon.3dc4a5a5c6adc24159bbf3b154131ba9.svg",
     "index.html": "/vladrepinsky/index.html",
-    "main.0992e61f.css.map": "/vladrepinsky/static/css/main.0992e61f.css.map",
-    "main.7c6d3bd0.js.map": "/vladrepinsky/static/js/main.7c6d3bd0.js.map"
+    "main.797b5706.css.map": "/vladrepinsky/static/css/main.797b5706.css.map",
+    "main.f0e81a46.js.map": "/vladrepinsky/static/js/main.f0e81a46.js.map"
   },
   "entrypoints": [
-    "static/css/main.0992e61f.css",
-    "static/js/main.7c6d3bd0.js"
+    "static/css/main.797b5706.css",
+    "static/js/main.f0e81a46.js"
   ]
 }
