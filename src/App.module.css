@@ -1,34 +1,3 @@
-.app {
-	min-height: 100vh;
-	background: grey;
-}
-
-.appWelcome {
-	display: flex;
-	max-width: 80%;
-	min-height: 100vh;
-	flex-direction: column;
-	align-items: left;
-	justify-content: center;
-	margin-left: 10%;
-	font-size: calc(10px + 2vmin);
-}
-
 .highlighted {
 	color: #f00;
-}
-
-@keyframes app-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-.footer {
-	display: block;
-	border: 2px solid red;
 }

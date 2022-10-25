@@ -1,9 +1,13 @@
 .toggleTheme {
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: fit-content;
 	box-sizing: border-box;
 	padding: 8px;
-	border: 2px solid red;
+	border: none;
 	background: white;
+	border-bottom-left-radius: 8px;
 }
 
 .toggleTheme:hover {
@@ -14,4 +18,5 @@
 	display: flex;
 	width: 24px;
 	height: 24px;
+	fill: green;
 }
