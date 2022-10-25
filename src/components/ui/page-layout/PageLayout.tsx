@@ -13,12 +13,12 @@ export const PageLayout = (props: PageLayoutProps) => {
 
 	return (
 		<div className={`${themeClass} ${styles.pageLayout}`}>
+			<ToggleTheme handleThemeChange={setThemeClass} />
 			<main className={styles.main}>
 				{props.children}
 			</main>
 			<div className={styles.main}>
 				<Footer />
-				<ToggleTheme handleThemeChange={setThemeClass} />
 			</div>
 		</div>
 	)
