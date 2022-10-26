@@ -1,6 +1,6 @@
 ## Welcome Stranger!
 
-This repository contains source code for my personal website. It is additionally intended to try out different stuff and extend my knowledge in react and other web development tools. Development supervised by a `Vue.js` ninja @yakovm1ke.
+This repository contains source code for my personal website. It is additionally intended to try out different stuff and extend my knowledge in react and other web development tools. Development supervised by a `Vue.js` ninja [@yakovm1ke](https://github.com/yakovm1ke).
 
 ## Current Usage
 Run development server, test and so on with the classic create-react-app bootstrap scripts: 
