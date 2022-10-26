@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { themes } from '../../assets/themes'
-import styles from './toggle-theme.module.css'
+import styles from './ToggleTheme.module.css'
 
 export type ToggleThemeProps = {
 	handleThemeChange: (cssClass: string) => void
