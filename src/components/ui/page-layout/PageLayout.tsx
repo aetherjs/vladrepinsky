@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Footer } from '../../footer/Footer'
+import { Footer } from '../../footer'
 import { ToggleTheme } from '../../toggle-theme'
 
 import styles from './PageLayout.module.css'
