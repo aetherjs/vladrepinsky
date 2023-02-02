@@ -6,7 +6,7 @@ function App() {
 
 	return (
 		<PageLayout>
-			<h1>Welcome</h1>
+			<h1>Welcome, Stranger!</h1>
 			<p>
 				My name is Vlad Repinskiy, I am a
 				&nbsp;<span className={styles.highlighted}>Fullstack developer</span>
