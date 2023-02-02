@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from './App.module.css'
 import { PageLayout } from './components/ui/page-layout'
+import { Episode, Storyline, StorylineProps } from './components/storyline/Storyline' 
+
+const testData: Episode[] = [
+	{heading: 'Workplace 1', dates: '2022 - Ongoing', description: 'Did some work here. Was cool init.', link: {name: 'GOOGLE', url: 'google.com'}}, 
+	{heading: 'Project 2', dates: 'October 2019', description: 'Bier trinken und Pizza essen.'},
+]
 
 function App() {
 
@@ -22,6 +28,7 @@ function App() {
 				Fusce sed sem eu elit gravida congue non at diam. Aliquam interdum neque enim.
 				Quisque et lacus iaculis, viverra libero interdum, ultricies.
 			</p>
+			<Storyline episodes={testData} />
 		</PageLayout>
 	)
 }
