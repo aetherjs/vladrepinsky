@@ -10,12 +10,12 @@ export interface Theme {
 
 export const themes: Theme[] = [
 	{
-		name: 'Светлая',
+		name: 'Light',
 		icon: sun,
 		class: styles.bright,
 	},
 	{
-		name: 'Темная',
+		name: 'Dark',
 		icon: moon,
 		class: styles.dark,
 	},
