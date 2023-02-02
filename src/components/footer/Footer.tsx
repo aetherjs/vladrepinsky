@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 
 export function Footer() {
 	return (
-		<footer>
+		<footer className={styles.footer}>
 			<ul className={styles.links}>
 				<li>Links</li>
 				<li>
@@ -12,7 +12,7 @@ export function Footer() {
 						href="https://github.com/aetherjs"
 						rel="noreferrer"
 					>
-						GitHub
+							GitHub
 					</a>
 				</li>
 				<li>And</li>
