@@ -1,22 +1,28 @@
-import sun from './sun.svg'
-import moon from './moon.svg'
 import styles from './themes.module.css'
 
-export interface Theme {
-	name: string,
-	icon: string,
-	class: string,
+export enum Themes {
+	Light = 'Light',
+	Dark = 'Dark',
 }
 
-export const themes: Theme[] = [
-	{
-		name: 'Light',
-		icon: sun,
-		class: styles.bright,
+export interface Theme {
+	id: Themes
+	next: Themes
+	title: string,
+	cssClass: string,
+}
+
+export const themes: Record<Themes, Theme> = {
+	[Themes.Light]: {
+		id: Themes.Light,
+		next: Themes.Dark,
+		title: '🌝',
+		cssClass: styles.light,
 	},
-	{
-		name: 'Dark',
-		icon: moon,
-		class: styles.dark,
+	[Themes.Dark]: {
+		id: Themes.Dark,
+		next: Themes.Light,
+		title: '🌚',
+		cssClass: styles.dark,
 	},
-]
+}
