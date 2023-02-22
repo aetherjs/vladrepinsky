@@ -1,18 +1,20 @@
 import React from 'react'
 import styles from './Footer.module.css'
 
+const GITHUB_PROFILE_URL = 'https://github.com/aetherjs'
+
 export function Footer() {
 	return (
-		<footer className={styles.footer}>
+		<>
 			<ul className={styles.links}>
 				<li>Links</li>
 				<li>
 					<a
 						target={'_blank'}
-						href="https://github.com/aetherjs"
-						rel="noreferrer"
+						rel={'noreferrer'}
+						href={GITHUB_PROFILE_URL}
 					>
-							GitHub
+						GitHub
 					</a>
 				</li>
 				<li>And</li>
@@ -21,6 +23,6 @@ export function Footer() {
 				<li>Links</li>
 				<li>@aetherjs {new Date().getFullYear()}</li>
 			</ul>
-		</footer>
+		</>
 	)
 }

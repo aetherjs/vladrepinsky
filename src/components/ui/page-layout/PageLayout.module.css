@@ -1,10 +1,29 @@
+:root {
+	--pageMaxWidth: 600px;
+	--padding: 16px;
+}
+
 .pageLayout {
+	display: flex;
 	min-height: 100vh;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .main {
-	max-width: 600px;
+	width: 100%;
+	max-width: var(--pageMaxWidth);
 	box-sizing: border-box;
-	padding: 1em;
+	padding: var(--padding);
+	margin: 0 auto;
+}
+
+.footer {
+	width: 100%;
+	max-width: var(--pageMaxWidth);
+	box-sizing: border-box;
+	padding: var(--padding);
+	border-top: 1px solid red;
 	margin: 0 auto;
 }
