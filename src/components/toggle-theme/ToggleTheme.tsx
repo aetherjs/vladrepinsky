@@ -1,21 +1,34 @@
-import React, { useState } from 'react'
-import { Themes, themes } from '../../assets/themes'
+import React, { useEffect, useState } from 'react'
+import { ThemeColors, Themes, themes } from '../../assets/themes'
 import styles from './ToggleTheme.module.css'
 
-export type ToggleThemeProps = {
-	changeTheme: (cssClass: string) => void
+const setPageColors = (colors: ThemeColors) => {
+	const sheet = new CSSStyleSheet()
+	sheet.replaceSync(`
+			body {
+				background: ${colors.background};
+				color: ${colors.text};
+			}
+			[data-accent] {
+				color: ${colors.accent};
+			}
+		`)
+	document.adoptedStyleSheets = [sheet]
 }
 
-export const ToggleTheme = (props: ToggleThemeProps) => {
+export const ToggleTheme = () => {
 	const [theme, setTheme] = useState(themes[Themes.Light])
 
 	const getNextTheme = () => {
 		return themes[theme.next]
 	}
 
+	useEffect(() => {
+		setPageColors(theme.colors)
+	})
+
 	const applyNextTheme = () => {
 		setTheme(getNextTheme())
-		props.changeTheme(getNextTheme().cssClass)
 	}
 
 	return (

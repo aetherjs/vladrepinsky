@@ -24,6 +24,6 @@
 	max-width: var(--pageMaxWidth);
 	box-sizing: border-box;
 	padding: var(--padding);
-	border-top: 1px solid red;
-	margin: 0 auto;
+	border-top: 2px solid;
+	margin: 32px auto 0;
 }

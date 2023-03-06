@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '../ui/link/Link'
 import styles from './Storyline.module.css'
 
 export type Episode = {
@@ -23,7 +24,7 @@ export const Storyline = ({ episodes }: StorylineProps) => {
 					<h2>{episode.heading}</h2>
 					<h3>{episode.dates}</h3>
 					<p>{episode.description}</p>
-					{episode.link && <a href={episode.link?.url}>{episode.link?.name}</a>}
+					{episode.link && <Link href={episode.link?.url}>{episode.link?.name}</Link>}
 					{index !== episodes.length - 1 && <div className={styles.connector}></div>}
 				</div>
 			))}

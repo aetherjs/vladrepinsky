@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { themes } from '../../../assets/themes'
 import { Footer } from '../../footer/Footer'
 import { ToggleTheme } from '../../toggle-theme'
 
@@ -9,18 +10,11 @@ export type PageLayoutProps = {
 }
 
 export const PageLayout = (props: PageLayoutProps) => {
-	const [themeClass, setThemeClass] = useState('')
-
 	return (
 		<div
-			className={`
-				${themeClass}
-				${styles.pageLayout}
-			`}
+			className={styles.pageLayout}
 		>
-			<ToggleTheme
-				changeTheme={setThemeClass}
-			/>
+			<ToggleTheme />
 			<main className={styles.main}>
 				{props.children}
 			</main>
