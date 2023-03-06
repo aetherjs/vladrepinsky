@@ -1,12 +1,12 @@
 .connector {
-    border-left: 1px solid rgb(0, 0, 0);
-    height: 50px;
-    margin-top: 16px;
-    left: 50%;  
-    position: relative;
-    left: 60px;
-  }
-  
+	position: relative;
+	left: 50%;
+	left: 60px;
+	width: fit-content;
+	height: 50px;
+	border-left: 1px solid rgb(0 0 0);
+	margin-top: 16px;
+}
 
 .item {
 }
