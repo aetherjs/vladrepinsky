@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '../ui/link/Link'
 import styles from './Footer.module.css'
 
 const GITHUB_PROFILE_URL = 'https://github.com/aetherjs'
@@ -9,13 +10,12 @@ export function Footer() {
 			<ul className={styles.links}>
 				<li>Links</li>
 				<li>
-					<a
+					<Link
 						target={'_blank'}
-						rel={'noreferrer'}
 						href={GITHUB_PROFILE_URL}
 					>
 						GitHub
-					</a>
+					</Link>
 				</li>
 				<li>And</li>
 				<li>Some</li>
