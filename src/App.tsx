@@ -1,6 +1,6 @@
 import React from 'react'
 import { PageLayout } from './components/ui/page-layout'
-import { Episode, Storyline } from './components/storyline/Storyline'
+import { Episode, Storyline } from './components/storyline'
 import { Highlighted } from './components/ui/highlighted'
 
 const testData: Episode[] = [
